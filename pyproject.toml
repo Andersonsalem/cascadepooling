@@ -1,0 +1,26 @@
+[project]
+name = "cascadepooling"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "beautifulsoup4>=4.14.3",
+    "networkx>=3.6.1",
+    "numpy>=2.4.2",
+    "pandas>=3.0.1",
+    "plotly>=6.5.2",
+    "requests>=2.32.5",
+    "scikit-learn>=1.8.0",
+    "streamlit>=1.19.0",
+    "torch>=2.10.0",
+    "torch-geometric==2.4.0",
+    "torch-scatter==2.1.2",
+    "torch-sparse>=0.6.18",
+    "torchaudio>=2.10.0",
+    "torchvision>=0.25.0",
+]
+
+[tool.uv.extra-build-dependencies]
+torch-scatter = ["torch>=2.10.0"]
+torch-sparse = ["torch>=2.10.0"]
